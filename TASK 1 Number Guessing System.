@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int randomNumber = 69;
+    int guess;
+
+    cout << "Guess the number between 1 and 100!" << endl;
+
+    do
+    {
+        cout << "Enter your guess: ";
+        cin >> guess;
+
+        if (guess < randomNumber)
+        {
+            cout << "It's Tooooo low Man :( " << endl;
+        }
+        else if (guess > randomNumber)
+        {
+            cout << "It's Tooooo high Man -_-" << endl;
+        }
+    } while (guess != randomNumber);
+
+    cout << "Congratsss xD !! You guessed the Correct Number <) : " << randomNumber << endl;
+
+    return 0;
+}
